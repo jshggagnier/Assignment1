@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coursys - Formula Tester</title>
     <link rel="stylesheet" href="stylesheets/Calcstyle.css">
-</head>
+    <link rel="shortcut icon" href="1280px-SFU-block-logo.svg.png">
+    <script src="JavaScript/Calc.js"></script>
+ </head>
 <body>
   <div class="innerArea">
     <div class="whiteSpace">
@@ -23,41 +25,58 @@
           <tr>
             <th>Name</th>
             <th>Short Name</th>
-            <th>Weight</th>
+            <th>Weight(relative value)</th>
             <th>Grade</th> 
             <th>Percent</th>
           </tr>
           <tr>
-            <td>Name</td>
+            <td>Assignment1</td>
             <td>Short Name</td>
-            <td>Weight</td>
-            <td>Grade</td> 
-            <td>Percent</td>
+            <td><input type="number" id="A1Weight"></td>
+            <td>
+              <input type="number" id="A1UpperVal"oninput="updateA1()">/<div></div>
+              <input type="number" id="A1LowerVal"oninput="updateA1()">
+            </td> 
+            <td id="outputA1">Percent</td>
           </tr>
           <tr>
-            <td>Name</td>
+            <td>Assignment2</td>
             <td>Short Name</td>
-            <td>Weight</td>
-            <td>Grade</td> 
-            <td>Percent</td>
+            <td><input type="number" id="A2Weight"></td>
+            <td>
+              <input type="number" id="A2UpperVal"oninput="updateA2()">/<div></div>
+              <input type="number" id="A2LowerVal"oninput="updateA2()">
+            </td> 
+            <td id="outputA2">Percent</td>
           </tr>
           <tr>
-            <td>Name</td>
+            <td>Assignment3</td>
             <td>Short Name</td>
-            <td>Weight</td>
-            <td>Grade</td> 
-            <td>Percent</td>
+            <td><input type="number" id="A3Weight"></td>
+            <td>
+              <input type="number" id="A3UpperVal"oninput="updateA3()">/<div></div>
+              <input type="number" id="A3LowerVal"oninput="updateA3()">
+            </td> 
+            <td id="outputA3">Percent</td>
           </tr>
           <tr>
-            <td>Name</td>
+            <td>Assignment4</td>
             <td>Short Name</td>
-            <td>Weight</td>
-            <td>Grade</td> 
-            <td>Percent</td>
+            <td><input type="number" id="A4Weight"></td>
+            <td>
+              <input type="number" id="A4UpperVal"oninput="updateA4()">/<div></div>
+              <input type="number" id="A4LowerVal"oninput="updateA4()">
+            </td> 
+            <td id="outputA4">Percent</td>
           </tr>
         </tbody>
         </table>
         Result
+          <div class="output" id="outputAverage">test</div>
+          <div class="rightAlign">
+            <button type="button" class="submitButtons" onclick="weightedMean()">WEIGHTED</button>
+            <button type="button" class="submitButtons" onclick="normalMean()">MEAN</button>
+          </div>
       </div>
     </div>
     </br>

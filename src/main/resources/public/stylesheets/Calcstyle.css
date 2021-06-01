@@ -58,3 +58,19 @@ td{
     font-size: large;
     font-weight: bold;
 }
+.submitButtons{
+    color:white;
+    background-color: #A9182A;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border: none;
+}
+.rightAlign{
+    text-align: right;
+}
+.output{
+color: black;
+font-size: x-large;
+font-weight: bold;
+}
