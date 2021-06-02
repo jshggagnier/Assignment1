@@ -105,3 +105,13 @@ function weightedMean(){
   console.log(Result);
   return;
 }
+
+function rename(targetNum)
+{
+  document.getElementById("Assignment"+targetNum).innerHTML = "<input type='text' id='box"+ targetNum +"'><div><button onclick='resolve("+targetNum+")'>rename</button></div>";
+}
+
+function resolve(targetNum)
+{
+  document.getElementById("Assignment"+targetNum).innerHTML = document.getElementById("box"+targetNum).value;
+}
